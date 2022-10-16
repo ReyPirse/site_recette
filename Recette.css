@@ -14,9 +14,9 @@ p.categorie {
 }
 div.contenu{
     background-color: white;
-    margin: 0px 10% 60px 10%; 
-    padding: 30px;
-    min-width: 300px;
+    margin: 0px 8px 50px 8px; 
+    padding: 30px 8px;
+    /*min-width: 300px;*/
     box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
 }
 h1{
@@ -36,7 +36,7 @@ p.description{
 }
 div.categorie{
     margin-bottom: -18px;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 div.separateur{
     background-color: black;
@@ -55,17 +55,17 @@ table.info{
     width: 100%; 
     color:white; 
     background-color:#6c829dc0;
-    height: 70px;
+    height: 50px;
 
 
 }
 table.info td{
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     vertical-align: top;
 }
 table.info th{
-    font-size: 16px;
+    font-size: 14px;
     vertical-align: bottom;
 }
 img.info{
@@ -76,7 +76,7 @@ img.info{
     background-color: gray;
 }
 div.colonne{
-    width: 45%;
+    width: 100%;
     margin-top: 20px;
 }
 div.colonne h2{
@@ -87,10 +87,6 @@ div.colonne h2{
 }
 div.colonne1{
     display: inline-block;
-    margin-right: 10px;
-}
-div.colonne2{
-    float: right;
 }
 div.Ingredients p{
     border: 2px solid lightgray;
@@ -124,4 +120,39 @@ table.préparation tr{
 }
 *{
     overflow: auto;
+}
+
+/*style ordi*/
+@media only screen and (min-width: 768px) {
+    div.contenu{
+        margin: 0px 10% 60px 10%; 
+        padding: 30px;
+        min-width: 300px;
+    }
+    table.info{
+        height: 70px;
+    }
+    table.info th{
+        font-size: 16px;
+    }
+    table.info td{
+        font-size: 14px;
+    }
+    div.colonne{
+        width: 45%;
+    }
+    div.colonne1{
+        margin-right: 10px;
+    }
+    div.colonne2{
+        float: right;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    div.contenu{
+        margin-left: auto;
+        margin-right: auto; 
+        width: 650px;
+    }
 }
